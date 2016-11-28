@@ -1,4 +1,4 @@
-package sharingbox_webapp;
+package sharingbox_webapp.SeleniumTests;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
