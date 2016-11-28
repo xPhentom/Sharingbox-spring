@@ -1,11 +1,13 @@
 package be.odisee.verhuursysteem_sharingbox.service;
 
 import java.util.Collection;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Service;
+
 import be.odisee.verhuursysteem_sharingbox.domain.Persoon;
 
 

@@ -1,6 +1,5 @@
 package be.odisee.verhuursysteem_sharingbox.dao;
 
-import org.hibernate.*;
 import org.springframework.stereotype.Repository;
 
 import be.odisee.verhuursysteem_sharingbox.domain.Rol;

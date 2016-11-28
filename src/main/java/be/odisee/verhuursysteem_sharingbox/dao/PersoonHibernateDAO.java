@@ -1,12 +1,12 @@
 package be.odisee.verhuursysteem_sharingbox.dao;
 
-import be.odisee.verhuursysteem_sharingbox.domain.Persoon;
-
 import java.util.List;
 
 import org.springframework.stereotype.Repository;
-import org.springframework.transaction.annotation.Transactional;
 import org.springframework.transaction.annotation.Propagation;
+import org.springframework.transaction.annotation.Transactional;
+
+import be.odisee.verhuursysteem_sharingbox.domain.Persoon;
 
 @Repository("PersoonDAO")
 @Transactional(propagation = Propagation.SUPPORTS, readOnly = true)

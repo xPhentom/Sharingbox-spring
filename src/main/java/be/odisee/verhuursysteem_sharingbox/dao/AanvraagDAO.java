@@ -5,7 +5,6 @@ import java.util.List;
 
 import be.odisee.verhuursysteem_sharingbox.domain.Aanvraag;
 import be.odisee.verhuursysteem_sharingbox.domain.Klant;
-import be.odisee.verhuursysteem_sharingbox.domain.Verhuring;
 
 public interface AanvraagDAO {
 

@@ -1,5 +1,7 @@
 package be.odisee.verhuursysteem_sharingbox.controller;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
@@ -7,16 +9,9 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import be.odisee.verhuursysteem_sharingbox.converter.AanvraagToVerhuring;
-import be.odisee.verhuursysteem_sharingbox.converter.BasicOpdracht;
-import be.odisee.verhuursysteem_sharingbox.domain.Aanvraag;
 import be.odisee.verhuursysteem_sharingbox.domain.Afbraak;
 import be.odisee.verhuursysteem_sharingbox.domain.Installatie;
 import be.odisee.verhuursysteem_sharingbox.domain.Persoon;
-import be.odisee.verhuursysteem_sharingbox.domain.Verhuring;
 import be.odisee.verhuursysteem_sharingbox.service.SharingboxService;
 import be.odisee.verhuursysteem_sharingbox.service.UserContextService;
 

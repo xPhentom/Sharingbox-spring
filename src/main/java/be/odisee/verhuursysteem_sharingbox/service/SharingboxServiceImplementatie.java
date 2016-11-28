@@ -1,19 +1,29 @@
 package be.odisee.verhuursysteem_sharingbox.service;
 
-import be.odisee.verhuursysteem_sharingbox.dao.AanvraagDAO;
-import be.odisee.verhuursysteem_sharingbox.dao.PersoonDAO;
-import be.odisee.verhuursysteem_sharingbox.dao.RolDAO;
-import be.odisee.verhuursysteem_sharingbox.dao.VerhuringDAO;
-import be.odisee.verhuursysteem_sharingbox.dao.AfbraakDAO;
-import be.odisee.verhuursysteem_sharingbox.dao.InstallatieDAO;
-import be.odisee.verhuursysteem_sharingbox.domain.*;
-
 import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.*;
+import org.springframework.transaction.annotation.Propagation;
+import org.springframework.transaction.annotation.Transactional;
+
+import be.odisee.verhuursysteem_sharingbox.dao.AanvraagDAO;
+import be.odisee.verhuursysteem_sharingbox.dao.AfbraakDAO;
+import be.odisee.verhuursysteem_sharingbox.dao.InstallatieDAO;
+import be.odisee.verhuursysteem_sharingbox.dao.PersoonDAO;
+import be.odisee.verhuursysteem_sharingbox.dao.RolDAO;
+import be.odisee.verhuursysteem_sharingbox.dao.VerhuringDAO;
+import be.odisee.verhuursysteem_sharingbox.domain.Aanvraag;
+import be.odisee.verhuursysteem_sharingbox.domain.Afbraak;
+import be.odisee.verhuursysteem_sharingbox.domain.Installateur;
+import be.odisee.verhuursysteem_sharingbox.domain.Installatie;
+import be.odisee.verhuursysteem_sharingbox.domain.Klant;
+import be.odisee.verhuursysteem_sharingbox.domain.Persoon;
+import be.odisee.verhuursysteem_sharingbox.domain.Rol;
+import be.odisee.verhuursysteem_sharingbox.domain.Sharingbox;
+import be.odisee.verhuursysteem_sharingbox.domain.Verhuring;
+import be.odisee.verhuursysteem_sharingbox.domain.Verhuurder;
 
 @Service("SharingboxService")
 @Transactional(propagation = Propagation.SUPPORTS, readOnly = true)

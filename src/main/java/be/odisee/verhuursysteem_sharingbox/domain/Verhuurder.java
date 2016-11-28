@@ -2,7 +2,10 @@ package be.odisee.verhuursysteem_sharingbox.domain;
 
 import java.util.List;
 
-import javax.persistence.*;
+import javax.persistence.DiscriminatorValue;
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.OneToMany;
 
 @Entity
 @DiscriminatorValue("Verhuurder")

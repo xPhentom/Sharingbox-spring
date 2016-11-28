@@ -1,16 +1,16 @@
 package be.odisee.verhuursysteem_sharingbox.dao;
 
-import org.hibernate.*;
-
 import java.util.ArrayList;
 import java.util.List;
 
+import org.hibernate.Query;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import be.odisee.verhuursysteem_sharingbox.domain.Aanvraag;
 import be.odisee.verhuursysteem_sharingbox.domain.Klant;
 import be.odisee.verhuursysteem_sharingbox.domain.Persoon;
-import be.odisee.verhuursysteem_sharingbox.domain.Rol;
 
 class HibernateDao {
 

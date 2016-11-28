@@ -1,6 +1,5 @@
 package be.odisee.verhuursysteem_sharingbox.dao;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import be.odisee.verhuursysteem_sharingbox.domain.Afbraak;

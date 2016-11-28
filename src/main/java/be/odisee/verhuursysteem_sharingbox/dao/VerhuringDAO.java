@@ -1,14 +1,13 @@
 package be.odisee.verhuursysteem_sharingbox.dao;
 
+import java.util.List;
+
 import be.odisee.verhuursysteem_sharingbox.domain.Aanvraag;
 import be.odisee.verhuursysteem_sharingbox.domain.Afbraak;
 import be.odisee.verhuursysteem_sharingbox.domain.Installatie;
-import be.odisee.verhuursysteem_sharingbox.domain.Rol;
 import be.odisee.verhuursysteem_sharingbox.domain.Sharingbox;
 import be.odisee.verhuursysteem_sharingbox.domain.Verhuring;
 import be.odisee.verhuursysteem_sharingbox.domain.Verhuurder;
-
-import java.util.List;
 
 public interface VerhuringDAO {
 

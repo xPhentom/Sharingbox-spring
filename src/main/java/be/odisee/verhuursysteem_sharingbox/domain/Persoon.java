@@ -2,16 +2,21 @@ package be.odisee.verhuursysteem_sharingbox.domain;
 
 import java.io.Serializable;
 import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
 
-import javax.persistence.*;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.OneToMany;
+import javax.persistence.Table;
 import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 
 import org.hibernate.validator.constraints.NotEmpty;
 
-import be.odisee.verhuursysteem_sharingbox.domain.*;
 import be.odisee.verhuursysteem_sharingbox.utilities.RolNotFoundException;
 
 @Entity

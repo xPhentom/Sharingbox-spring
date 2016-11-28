@@ -7,10 +7,9 @@ import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
-import be.odisee.verhuursysteem_sharingbox.domain.Klant;
+
 import be.odisee.verhuursysteem_sharingbox.domain.Persoon;
 import be.odisee.verhuursysteem_sharingbox.domain.Rol;
-import be.odisee.verhuursysteem_sharingbox.domain.Verhuring;
 import be.odisee.verhuursysteem_sharingbox.service.SharingboxService;
 import be.odisee.verhuursysteem_sharingbox.service.UserContextService;
 

@@ -1,6 +1,7 @@
 package be.odisee.verhuursysteem_sharingbox.domain;
 
-import javax.persistence.*;
+import javax.persistence.DiscriminatorValue;
+import javax.persistence.Entity;
 
 @Entity
 @DiscriminatorValue("Administrator")
