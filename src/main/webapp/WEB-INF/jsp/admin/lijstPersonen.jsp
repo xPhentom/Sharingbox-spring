@@ -40,7 +40,7 @@
 		</c:forEach>
 	</ul>
 	<c:url var="nieuwePersoonUrl" value="nieuwePersoon.html" />
-	<a href='<c:out value="${nieuwePersoonUrl}"/>'>Persoon Toevoegen</a>
+	<a href='<c:out value="${nieuwePersoonUrl}"/>' id="PersoonToevoegen">Persoon Toevoegen</a>
 	<br />
 	<br />
 	<c:url var="logoutUrl" value="/logout" />
